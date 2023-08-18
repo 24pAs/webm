@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function WebM() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4">
       <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm lg:flex pb-5">
         <Link href={'/mp4'} className='text-blue-600'>mp4 video 보기 가기</Link>
       </div>
