@@ -28,10 +28,6 @@ export default function Home() {
         </div>
       </div>
 
-      <video width='600' height='auto' src='/test.webm' autoPlay muted>
-        <source src='/test.webm' type='video/webm' />
-        브라우저가 video 태그를 지원하지 않습니다.
-      </video>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
