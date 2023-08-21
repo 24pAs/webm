@@ -9,7 +9,7 @@ export default function Mp4() {
         <Link href={'/webm'} className='text-blue-600'>webM video 보기 가기</Link>
       </div>
 
-      <video width='600' height='auto' autoPlay muted>
+      <video width='600' height='auto' autoPlay muted playsInline>
         <source src='/mov.mp4' type='video/mp4' />
         브라우저가 video 태그를 지원하지 않습니다.
       </video>

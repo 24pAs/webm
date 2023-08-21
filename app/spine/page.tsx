@@ -62,10 +62,6 @@ export default function SpineHome() {
         dragon.update(app.ticker.deltaMS / 1000); // IN SECONDS!
       });
     }
-    return () => {
-      // @ts-ignore
-      document.getElementById('spine').removeChild(app.view);
-    }
 
   }, []);
   return (
