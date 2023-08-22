@@ -8,7 +8,10 @@ import {Spine} from 'pixi-spine';
 export default function SpineHome() {
   useEffect(() => {
     if(!document) return;
-    const app = new Application();
+    const app = new Application({
+      width: 600,
+      height: 338
+    });
     // @ts-ignore
     document.getElementById('spine').appendChild(app.view);
 
@@ -33,8 +36,8 @@ export default function SpineHome() {
 
       // now we can scale, position and rotate the container as any other display object
       const scale = Math.min(
-        (app.screen.width * 0.7) / dragonCage.width,
-        (app.screen.height * 0.7) / dragonCage.height,
+        (app.screen.width) / dragonCage.width,
+        (app.screen.height) / dragonCage.height,
       );
       dragonCage.scale.set(scale, scale);
       dragonCage.position.set(
